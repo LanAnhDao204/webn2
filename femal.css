@@ -1,0 +1,405 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+section{
+    /* border: 2px solid red; */
+    /* min-height: 200px; */
+    margin: auto;
+}
+header, nav, main, footer{
+    margin: auto;
+    width: 1500px;
+    /* border: 2px solid green; */
+    /* min-height: 400px; */
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.header{
+    height: 100px;
+    border-bottom: 2px solid grey;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    /* top: 0px;
+    position: sticky;
+    left: 0;
+    z-index: 10000;
+    background-color: white; */
+
+}
+.left-header>ul{
+    list-style: none;
+    display: flex;
+
+}
+.left-header>ul>li{
+    padding: 0px 8px;
+    margin: 10px;
+}
+.left-header>ul>li>a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+.menu{
+    display: flex;
+    position: relative;
+}
+.mybox{
+    display: none;
+    position: absolute;
+    justify-content: space-between;
+    padding: 20px;
+    border: 1px solid grey;
+    background-color: white;
+    width: 1500px;
+    top: 50px;
+    left: 0;
+    z-index: 10;
+}
+.left-header>ul>li:first-child:hover .mybox{
+    display: flex;
+}
+
+.sub-menu>div a{
+    color: #000;
+    font-weight: bold;
+}
+.sub-menu>div{
+    margin-bottom: 15px;
+
+}
+.list-submenu0{
+    display: flex;
+    flex-direction: column;
+    /* margin: 15px; */
+}
+.list-submenu:first-child{
+    margin: 0px;
+}
+.list-submenu p,h3{
+    margin-bottom: 15px;
+}
+.list-submenu>h3>a{
+    color: #000;
+}
+.list-submenu0 h3 a{
+    color: #000;
+}
+
+.list-submenu>p>a{
+    color: grey;
+}
+.list-submenu0 p a{
+    color: grey;
+}
+
+
+.right-header{
+    height: 100px;
+    width: 400px;
+    display: flex;
+    margin-top: 60px;
+}
+.right-header .search{
+    display: flex;
+    height: 100px;
+    width: 250px;
+    position: relative;
+
+}
+.search ion-icon{
+    top:12px;
+    left: 10px;
+    position: absolute;
+    z-index: 1000;
+    color: #000;
+}
+
+
+.right-header .search>input{
+    /* margin-top: 50px; */
+    height: 40px;
+    position: relative;
+    color: rgb(122, 119, 119);
+    padding-left: 40px;
+
+}
+
+.search:hover .quick-view {
+    display: block;
+}
+.quick-view{
+    background-color: white;
+    position: absolute;
+    top: 60px;
+    left: 0px;
+    border: 2px solid grey;
+    padding: 5px;
+    width: 400px;
+    display: none;
+    z-index: 20;
+
+}
+.quick-view>h3{
+    padding: 10px;
+}
+.most-search{
+    display: flex;
+    margin: 10px;
+}
+.most-search-div{
+    margin: 5px;
+}
+.tag{
+    color: #000;
+    font-weight: 800;
+    border: 1px solid grey;
+    margin: 5px;
+    width: 80px;
+    height: 40px;
+    align-items: center;
+    border-radius: 10px 0 10px 0;
+
+}
+
+.tag a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top:8px;
+    text-align: center;
+    color: #000;
+    font-weight: 800;
+
+    /* justify-content: space-between; */
+    /* align-items: center; */
+}
+
+.icon ion-icon{
+    /* margin-left: 10px; */
+    padding: 10px;
+    color: #000;
+    margin-left: 0px;
+    width: 20px;
+    height: 20px;
+}
+
+nav{
+    height: 100px;
+}
+nav>ul{
+    display: flex;
+    align-items: center;
+    /* border-top:2px solid grey ; */
+    border-bottom:2px solid grey ;
+    
+}
+nav>ul>li{
+    padding: 10px;
+}
+nav>ul>li>a{
+    color: grey;
+    
+}
+.main{
+    /* display: flex; */
+    height: auto;
+
+}
+.main-left{
+    width: 15%;
+    height: 100%;
+    float: left;
+
+}
+.main-left .loc{
+    display: flex;
+    margin-left: 50px;
+}
+.loc .box1{
+    background-color: white;
+    width: 80px;
+    height: 30px;
+    border: 1px solid black;
+    padding-top: 5px;
+    margin-right: 10px;
+    text-align: center;
+    border-radius: 10px 0 10px 0;
+}
+.loc .box1:hover{
+    background-color: black;
+    color: white;
+}
+.loc .box2{
+    background-color: black;
+    width: 80px;
+    height: 30px;
+    margin-left: 5px;
+    color: white;
+    padding-top: 5px;
+    text-align: center;
+    border-radius: 10px 0 10px 0;
+    border: 1px solid black;
+
+}
+.loc .box2:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+
+}
+.main-left>ul>li{
+    border-bottom: 2px solid grey;
+    padding: 20px;
+    padding-left: 10px;
+}
+.main-left>ul>li:last-child{
+    border:none;
+}
+.main-left>ul>li>a{
+    color: black;
+    font-size: 18px;
+
+}
+.main-right{
+    width: 85%;
+    height: 100%;
+    float: right;
+}
+.main-right-top{
+    height: 70px;
+    width: 97%;
+    display: flex;
+    padding:10px 0px;
+    margin-left: 30px;
+    justify-content: space-between;
+    /* border: 2px solid gray; */
+}
+.main-right-top #form{
+    /* margin-right: 0px; */
+    margin-left: 100px;
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.main-right-bottom{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+.line{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.box{
+    width: 23%;
+    height: 600px;
+    margin-left: 30px;
+    margin-top: 20px;
+    /* display: flex;
+    justify-content: space-between; */
+    display: flex;
+    flex-direction: column;
+}
+.product{
+    position: relative;
+    width: 100%;
+    height: 80%;
+}
+.product img.cover{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.product:hover img.cover{
+    display: none;
+}
+.box img{
+    width: 100%;
+    height: 100%;
+}
+.content{
+    height: 20%;
+
+}
+.first-div{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+
+}
+.first-div .circle{
+    display: flex;
+}
+
+.circle0, .circle1, .circle2, .circle3{
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 20px;
+    margin-right: 10px;
+
+}
+.circle2{
+    background-color: brown;
+}
+.circle3{
+    background-color: rgb(21, 24, 21);
+}
+.heart ion-icon{
+    width: 30px;
+    height: 20px;
+}
+.second-div{
+    margin-top: 10px;
+}
+.second-div a{
+    color: black;
+    font-size: 20px;
+
+}
+.thirst-div{
+    display: flex;
+    justify-content: space-between;
+}
+.price{
+    margin-top: 10px;
+
+}
+.price #grey{
+    color: grey;
+    font-size: 13px;
+}
+.bag ion-icon{
+    color: white;
+    font-size: 15px;
+    align-items: center;
+    padding-left: 3px;
+    padding-top: 5px;
+
+}
+.thirst-div .bag{
+    margin-top: 5px;
+    background-color: black;
+    border-radius: 7px 0 7px;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 25px;
+    margin-top: 5px;
+}
+footer{
+    /* height: 400px;
+    border: 2px solid black; */
+}
